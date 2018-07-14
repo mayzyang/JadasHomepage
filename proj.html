@@ -11,7 +11,11 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+
 <style>
+
 .parallax {
     /* The image used */
     background-image: url("bermuda.png");
@@ -84,7 +88,7 @@ a:link {
 
 a:hover {
     font-weight: bold;
-    color: #333333;
+    color: #656565;
     background-color: transparent;
     text-decoration: none;
 }
@@ -98,7 +102,7 @@ a:hover {
 }
 
 #textbox1 {
-  font-family: Courier;
+  font-family: "Courier New";
   padding-top: 10px;
   width: 50%;
   float: left;
@@ -108,17 +112,38 @@ a:hover {
 }
 
 #textbox2 {
-  font-family: Courier;
+  font-family: "Courier New";
   padding-left: 5%;
   padding-top: 10px;
 }
 
+#heading {
+  font-family: "Lobster", serif;
+  font-size: 18px;
+}
+
+#textboxCourses {
+  font-family: "Courier New";
+  padding-top: 10px;
+  width: 45%;
+  float: left;
+  height: auto;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+#skills {
+  font-family: "Courier New";
+  padding-top: 5px;
+  padding-left: 5%
+}
+
 #contactIcons {
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .projects {
-    background-color: #2c3e50;
+    background-color: #74849e;
     width:100%;
     height: auto;
     color: white;
@@ -152,7 +177,9 @@ a:hover {
 <div style="position:center;" class="myBio">
 
   <div id="textbox1">
-    <p><center> ABOUT ME </center></p>
+    <div id="heading">
+      <p><center>About Me</center></p>
+    </div>
   <p>My name is May Yang and I'm a junior at the University of Michigan currently pursuing a major in Computer Science
                 and a minor in Entrepreneurship. Ever since I was young, I've always had ambitious and creative ideas,
                 but going beyond just daydreaming, I've loved transforming those ideas into real creations. In the summer
@@ -172,7 +199,7 @@ a:hover {
   </div>
 
 <div id="textbox2">
-<p><center>CONTACT ME</center></p>
+<div id="heading"><p><center>Contact Me</center></p></div>
 <center>
 <div id="contactIcons">
 <p><span class="glyphicon glyphicon-map-marker"></span> New York, US</p>
@@ -181,15 +208,46 @@ a:hover {
 <p><span class="glyphicon glyphicon-thumbs-up"></span> Facebook: <a href = "https://www.facebook.com/may.yang.10" target="_blank">facebook.com/may.yang.10</a></p>
 <p><span class="glyphicon glyphicon-envelope"></span> Email: <a href = "mailto:mayyang@umich.edu">mayyang@umich.edu</a></p>
 </div>
-<img src="Proj/profilePic.png" alt="Profile Pic">
+<br>
+<img src="profilePic.png" alt="Profile Pic" width="300" height="400" style="position:center" class="mePic">
+<br>
+<br>
+<br>
 </center>
 </div>
 </div>
 
 <div class="projects">
-<p>Classes I've Taken:</p>
+<div id="textboxCourses">
+<center>
+  <div id="heading"><p>Courses I've Taken:</p></div>
+  <p>- EECS 388: Intro to Computer Security</p>
+  <p>- EECS 376: Foundations of Computer Science</p>
+  <p>- EECS 370: Intro to Computer Organization</p>
+  <p>- EECS 281: Data Structures & Algorithms</p>
+  <p>- EECS 280: Programming & Intro Data Structures</p>
+  <p>- EECS 203: Discrete Mathematics</p>
+  <p>- Elementary Programming Concepts</p>
+  <br>
+  <br>
+</center>
 </div>
 
+<div id="skills">
+<center>
+<div id="heading"><p><center>Computer Languages:</center></p></div>
+<p> cout << <b>C++;</b> </p>
+<p> system.print.out(<b>Java</b>);<p>
+<p> print(<b>Python</b>)</p>
+<p> console.log(<b>JavaScript</b>) </p>
+<p> HTML</p>
+<p> CSS </p>
+</center>
+<br>
+
+</div>
+
+</div>
 
 
 
