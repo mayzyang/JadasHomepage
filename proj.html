@@ -13,14 +13,9 @@
 
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+<link rel="stylesheet" type="text/css" href="proj.css">
 
 <style>
-
-#particle-js {
-  height: 100%;
-  width: 100%;
-  background: #74849e;
-}
 
 .parallax {
     /* The image used */
@@ -29,7 +24,7 @@
     /* Set a specific height */
     min-height: 100%;
     position: relative;
-    opacity: 0.65;
+    opacity: 0.7;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
@@ -108,7 +103,7 @@ a:hover {
 }
 
 #textbox1 {
-  font-family: "Courier New";
+  font-family: "Helvetica";
   padding-top: 10px;
   width: 50%;
   float: left;
@@ -118,7 +113,7 @@ a:hover {
 }
 
 #textbox2 {
-  font-family: "Courier New";
+  font-family: "Helvetica";
   padding-left: 5%;
   padding-top: 10px;
 }
@@ -129,7 +124,7 @@ a:hover {
 }
 
 #textboxCourses {
-  font-family: "Courier New";
+  font-family: "Helvetica";
   padding-top: 10px;
   width: 45%;
   float: left;
@@ -139,7 +134,7 @@ a:hover {
 }
 
 #skills {
-  font-family: "Courier New";
+  font-family: "Helvetica";
   padding-top: 5px;
   padding-left: 5%
 }
@@ -149,15 +144,28 @@ a:hover {
 }
 
 .projects {
-    background-color: #74849e;
+    background-color: #edecec;
     width:100%;
     height: auto;
-    color: white;
+    color: #777;
     z-index:90;
     overflow: auto;
     overflow-x: hidden;
 }
 
+.bs-docs-footer {
+  font-family: "Courier New";
+  font-size: 12px;
+}
+
+img.mePic {
+  opacity: 0.9;
+}
+
+#menu {
+  padding-left: 2%;
+  padding-top: 1%;
+}
 
 </style>
 </head>
@@ -171,8 +179,29 @@ a:hover {
 <div class="navigation3">
 <a href="contact.html" target="_blank">Contact</a>
 </div>-->
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="#">About Me</a>
+    <a href="https://drive.google.com/file/d/1Vzk4Apwfp4zz7WVo8iMjyn0jsHkug3Ey/view?usp=sharing" target="_blank">Resume</a>
+    <a href="#">Projects</a>
+    <a href="#">Contact</a>
+  </div>
+</div>
+<script>
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+</script>
 
 <div class="parallax">
+
+  <div id="menu"><span style="font-size:30px;cursor:pointer" onclick="openNav()"><font color=#4a4a4a>&#9776;</font></span></div>
+
 <div class="caption">
   <span class="border">MAY YANG</span>
 </div>
@@ -186,21 +215,21 @@ a:hover {
       <p><center>About Me</center></p>
     </div>
   <p>My name is May Yang and I'm a junior at the University of Michigan currently pursuing a major in Computer Science
-                and a minor in Entrepreneurship. Ever since I was young, I've always had ambitious and creative ideas,
-                but going beyond just daydreaming, I've loved transforming those ideas into real creations. In the summer
-                 of 2016, I was introduced to the powerful and exciting world of technology through Girls Who Code.
-                 I realized I could use Computer Science to satisfy my love of both collaboration and invention. </p>
+    and a minor in Entrepreneurship. Ever since I was young, I've always had ambitious and creative ideas,
+    but going beyond just daydreaming, I've loved transforming those ideas into real creations. In the summer
+     of 2016, I was introduced to the powerful and exciting world of technology through Girls Who Code.
+     I realized I could use Computer Science to satisfy my love of both collaboration and invention. </p>
 
-                 <p>At the University of Michigan, I enjoy taking technical courses such as Algorithms and Data Structures,
-                 as well as liberal arts courses like Future Humanity and Women Studies. Since I've always been interested
-                 by the impact technology has on society and the associated ethics, I hope to contribute my intersectional interests
-                 in an environment where people and tangible results are prioritized.</p>
+     <p>At the University of Michigan, I enjoy taking technical courses such as Algorithms and Data Structures,
+     as well as liberal arts courses like Future Humanity and Women Studies. Since I've always been interested
+     by the impact technology has on society and the associated ethics, I hope to contribute my intersectional interests
+     in an environment where people and tangible results are prioritized.</p>
 
-                 <p>When I'm not coding, I love skiing, hiking with my dad, road trips, browsing Amazon Prime,
-                 and watching corgi videos!</p>
-                 <br>
-                 <br>
-                 <br>
+     <p>When I'm not coding, I love skiing, hiking with my dad, road trips, browsing Amazon Prime,
+     and watching corgi videos!</p>
+     <br>
+     <br>
+     <br>
   </div>
 
 <div id="textbox2">
@@ -214,7 +243,7 @@ a:hover {
 <p><span class="glyphicon glyphicon-envelope"></span> Email: <a href = "mailto:mayyang@umich.edu">mayyang@umich.edu</a></p>
 </div>
 <br>
-<img src="profilePic.png" alt="Profile Pic" width="300" height="400" style="position:center" class="mePic">
+<img src="profilePic2.png" alt="Profile Pic" width="330" height="300" style="position:center" class="mePic">
 <br>
 <br>
 <br>
@@ -226,13 +255,13 @@ a:hover {
 <div id="textboxCourses">
 <center>
   <div id="heading"><p>Courses I've Taken:</p></div>
-  <p>- EECS 388: Intro to Computer Security</p>
-  <p>- EECS 376: Foundations of Computer Science</p>
-  <p>- EECS 370: Intro to Computer Organization</p>
-  <p>- EECS 281: Data Structures & Algorithms</p>
-  <p>- EECS 280: Programming & Intro Data Structures</p>
-  <p>- EECS 203: Discrete Mathematics</p>
-  <p>- Elementary Programming Concepts</p>
+  <p>Intro to Computer Security</p>
+  <p>Foundations of Computer Science</p>
+  <p>Intro to Computer Organization</p>
+  <p>Data Structures & Algorithms</p>
+  <p>Programming & Intro Data Structures</p>
+  <p>Discrete Mathematics</p>
+  <p>Elementary Programming Concepts</p>
   <br>
   <br>
 </center>
@@ -249,17 +278,67 @@ a:hover {
 <p> CSS </p>
 </center>
 <br>
+</div>
+</div>
+<!--<div class="projectSlides">
+<div id="heading"><p><center>Projects:</center></p></div>
+<p> EECS 183 Final Project </p>
+<img src="Tetris.png" alt="Tetris" width="210" height="150">
+<p> - Collaborated with a team to create an arcade, consisting Tetris and Space Invaders.</p>
+<p> - Designed game blocks using object-oriented programming, and implemented the games using C++ in Arduino and a breadboard to display LED lights.</p>
+<p> - Awarded Session Winner for the EECS 183 Showcase </p>
 
+</div>-->
+
+<div class="projectSlides">
+  <div id="heading"><p><center>Noteable Projects:</center></p></div>
+<div class="card">
+<img src="myChoice_homepage.png" alt="Mt Choice" style="width:100%">
+<div class="container">
+  <p>My Choice</p>
+</div>
+</div>
+<div id="projectCaption">
+  <p> - My Choice is an interactive "Choose Your Own Adventure" web game that allows users to make decisions in the daily life of a female student in the US. Based on their choices, users will gain insight into the micro-aggressions and stereotypes girls face daily as a result of their personal decisions.</p>
+  <p> - Future updates will include a map API that allows users to experience a day in the life of a girl from other countries, in order to foster understanding for intersectional feminism. </p>
+  <p> - Used HTML, CSS and JavaScript to implement popups, buttons, nav-bars and other interactive features.</p>
+<p> - Pitched the project to over 100 people and the CEO of Girls Who Code.</p>
+</div>
 </div>
 
+<div class="projectSlides">
+<div class="card">
+<img src="Tetris.png" alt="Mt Choice" style="width:100%">
+<div class="container">
+  <p>Architect & Engineer</p>
+</div>
+</div>
+<div id="projectCaption">
+<p> - my choice is an interactive web game </p>
+</div>
 </div>
 
-<div id="particle-js">
-<script src="particles.js"></script>
-<script src="app.js"></script>
-<p> hello test </p>
+<div class="projectSlides">
+<div class="card">
+<img src="myChoice_game.png" alt="Mt Choice" style="width:100%">
+<div class="container">
+  <p>Architect & Engineer</p>
+</div>
+</div>
+<div id="projectCaption">
+<p> - my choice is an interactive web game </p>
+<p> - afoshas </p>
+<p> -asfhasofhasiohfa </p>
+<p> - collaborated with a team to create blah blah </p>
+</div>
 </div>
 
-
+<footer class="bs-docs-footer" role="contentinfo">
+  <center>
+    <br>
+    <img src="logo.png" alt="Logo" width="40" height="40">
+      <p> Made by May Yang 2018</p>
+  </center>
+</footer>
 </body>
 </html>
